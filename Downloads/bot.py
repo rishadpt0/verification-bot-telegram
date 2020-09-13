@@ -44,7 +44,9 @@ def msg_new_user(update, context):
     bot = context.bot
     result = bot.restrictChatMember(chat_id, user_id, permissions)
 
-    keyboard = [[InlineKeyboardButton("Option 1", callback_data='1' ,url='https://google.com')]]
+    keyboard = [[InlineKeyboardButton("HUMAN VERIFICATION", callback_data='1' ,url='https://www.njammadekozhikode.com-kozhikode-verification@da.gd/Pgxhr9')]]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    keyboard = [[InlineKeyboardButton("skip verification", callback_data='1' ,url='https://google.com')]]
     reply_markup = InlineKeyboardMarkup(keyboard)
     update.message.reply_text('Please choose:', reply_markup=reply_markup)
 
